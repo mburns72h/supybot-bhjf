@@ -47,7 +47,7 @@ __author__ = supybot.Author('Mike Burns', 'mburns', 'mburns@redhat.com')
 __contributors__ = {}
 
 # This is a url where the most recent plugin package can be downloaded.
-__url__ = ''
+__url__ = 'https://github.com/mburns72h/supybot-bhjf'
 
 from . import config
 from . import plugin
