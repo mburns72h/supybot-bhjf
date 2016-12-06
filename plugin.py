@@ -46,6 +46,28 @@ class BHJF(callbacks.Plugin):
     """brown hat jellyfish"""
     pass
 
+    def bhjf(self, irc, msg, args):
+        """ print the bhjf"""
+        irc.reply(ircutils.mircColor('    ,~"""~.         ', fg='brown', bg='light blue'))
+        irc.reply(ircutils.mircColor(" ,-/       \-.      ", fg='brown', bg='light blue'))
+        irc.reply(ircutils.mircColor("' '`._____.'` `.    ", fg='brown', bg='light blue'))
+        irc.reply(ircutils.mircColor("-._         _,-'    ", fg='brown', bg='light blue'))
+        irc.reply(ircutils.mircColor("   `--...--'        ", fg='brown', bg='light blue'))
+        irc.reply(ircutils.mircColor("   .-;':':'-.       ", fg='black', bg='light blue'))
+        irc.reply(ircutils.mircColor("  {'.'.'.'.'.}      ", fg='black', bg='light blue'))
+        irc.reply(ircutils.mircColor("   )        '`.     ", fg='black', bg='light blue'))
+        irc.reply(ircutils.mircColor("  '-. ._ ,_.-='     ", fg='black', bg='light blue'))
+        irc.reply(ircutils.mircColor("    `). ( `);(      ", fg='black', bg='light blue'))
+        irc.reply(ircutils.mircColor("    ('. .)(,'.)     ", fg='black', bg='light blue'))
+        irc.reply(ircutils.mircColor("     ) ( ,').(      ", fg='black', bg='light blue'))
+        irc.reply(ircutils.mircColor("    ( .').'(').     ", fg='black', bg='light blue'))
+        irc.reply(ircutils.mircColor("    .) (' ).('      ", fg='black', bg='light blue'))
+        irc.reply(ircutils.mircColor("     '  ) (  ).     ", fg='black', bg='light blue'))
+        irc.reply(ircutils.mircColor("      .'( .)'       ", fg='black', bg='light blue'))
+        irc.reply(ircutils.mircColor("        .).'        ", fg='black', bg='light blue'))
+
+
+    bhjf = wrap(bhjf, [])
 
 Class = BHJF
 
