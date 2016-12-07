@@ -84,6 +84,70 @@ class BHJF(callbacks.Plugin):
             bg='light blue'), prefixNick=False)
     bhjf = wrap(bhjf, [])
 
+    def celebrate(sef, irc, msg, args):
+        """time to celebrate"""
+
+        irc.reply(ircutils.mircColor("     ,;``',", fg='red',
+            bg='white'), prefixNick=False)
+        irc.reply(ircutils.mircColor("    ;      |", fg='red',
+            bg='white'), prefixNick=False)
+        irc.reply(ircutils.mircColor("    ;;. ;;,'", fg='red',
+            bg='white'), prefixNick=False)
+        irc.reply(ircutils.mircColor("     `\"-'7'.   IT'S TIME TO CELEBRATE!!   _  /", fg='red',
+            bg='white'), prefixNick=False)
+        irc.reply(ircutils.mircColor("         |' >.                         .'` |\  -", fg='red',
+            bg='white'), prefixNick=False)
+        irc.reply(ircutils.mircColor("         | /  >.                   _\ /   /  |  -", fg='red',
+            bg='white'), prefixNick=False)
+        irc.reply(ircutils.mircColor("         '/  / ,`.  __..----.       .'  .'  /  _", fg='red',
+            bg='white'), prefixNick=False)
+        irc.reply(ircutils.mircColor("         ;  / /_.-'          \     /_.-`_.-'  \ ", fg='red',
+            bg='white'), prefixNick=False)
+        irc.reply(ircutils.mircColor("          ;' .'  '`           |  - `-.-'", fg='red',
+            bg='white'), prefixNick=False)
+        irc.reply(ircutils.mircColor("          |_/                .'   /   \_\_", fg='red',
+            bg='white'), prefixNick=False)
+        irc.reply(ircutils.mircColor("          _|  |_    .____.-'`         / __)`\ ", fg='red',
+            bg='white'), prefixNick=False)
+        irc.reply(ircutils.mircColor("         ( `  /\`'-...__.'  \        | '\(_.'|", fg='red',
+            bg='white'), prefixNick=False)
+        irc.reply(ircutils.mircColor("          `-\   \ `-'-'-'|   `.      -.  \(_./", fg='red',
+            bg='white'), prefixNick=False)
+        irc.reply(ircutils.mircColor("             \   \.-.-.  \     \___ /  >-'\_\ ", fg='red',
+            bg='white'), prefixNick=False)
+        irc.reply(ircutils.mircColor("              \   \  \ \  `/\  |_  '` /", fg='red',
+            bg='white'), prefixNick=False)
+        irc.reply(ircutils.mircColor("           _./\    \  ' | /    /_\ .-`", fg='red',
+            bg='white'), prefixNick=False)
+        irc.reply(ircutils.mircColor("         .' _.\'.   '.__.'    /`\`'", fg='red',
+            bg='white'), prefixNick=False)
+        irc.reply(ircutils.mircColor("  .-.---'\_/   `.`'-..____   ;   \ ", fg='red',
+            bg='white'), prefixNick=False)
+        irc.reply(ircutils.mircColor(" / / .--. |,     `'-._   /`'.|    |", fg='red',
+            bg='white'), prefixNick=False)
+        irc.reply(ircutils.mircColor(" `| /-' / / \         `.'    \   _/", fg='red',
+            bg='white'), prefixNick=False)
+        irc.reply(ircutils.mircColor("  '-'  '-' \ `-._            _,-' |", fg='red',
+            bg='white'), prefixNick=False)
+        irc.reply(ircutils.mircColor("            \    `'''----''''    /", fg='red',
+            bg='white'), prefixNick=False)
+        irc.reply(ircutils.mircColor("             >                _.'", fg='red',
+            bg='white'), prefixNick=False)
+        irc.reply(ircutils.mircColor("            / /`'-.._____..--'\ \ ", fg='red',
+            bg='white'), prefixNick=False)
+        irc.reply(ircutils.mircColor("           < \                / /", fg='red',
+            bg='white'), prefixNick=False)
+        irc.reply(ircutils.mircColor("            \ `.           .'  |___ mx", fg='red',
+            bg='white'), prefixNick=False)
+        irc.reply(ircutils.mircColor("          ___\_ `.        /__.-'   ``--..", fg='red',
+            bg='white'), prefixNick=False)
+        irc.reply(ircutils.mircColor("   ..--''`     `-.\      (___/`'--.._____)", fg='red',
+            bg='white'), prefixNick=False)
+        irc.reply(ircutils.mircColor("  (_____...--'`\___) ", fg='red',
+            bg='white'), prefixNick=False)
+    celebrate = wrap(celebrate, [])
+
+
 Class = BHJF
 
 
