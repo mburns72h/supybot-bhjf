@@ -147,6 +147,18 @@ class BHJF(callbacks.Plugin):
             bg='white'), prefixNick=False)
     celebrate = wrap(celebrate, [])
 
+    def haha(self, irc, msg, args):
+        """ junk """
+        irc.reply("have you heard the one about when tps, errata and bugzilla walked into a bar?")
+    haha = wrap(haha, [])
+    lol = wrap(haha, [])
+
+
+    def tps(self, irc, msg, args):
+        """ junk """
+        irc.reply("TPS stands for Testing Personal Sanity")
+    tps = wrap(tps, [])
+
 
 Class = BHJF
 
