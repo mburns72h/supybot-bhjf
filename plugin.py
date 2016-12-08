@@ -159,6 +159,12 @@ class BHJF(callbacks.Plugin):
         irc.reply("TPS stands for Testing Personal Sanity")
     tps = wrap(tps, [])
 
+    def ET(self, irc, msg, args):
+        """ ET Phone Home """
+        irc.reply("ET phones home")
+    et = wrap(ET, [])
+    errata = wrap(ET, [])
+
 
 Class = BHJF
 
