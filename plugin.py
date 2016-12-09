@@ -101,6 +101,7 @@ class BHJF(callbacks.Plugin):
         irc.reply("        \;:  ;:/", prefixNick=False)
         irc.reply('         """"""', prefixNick=False)
     cheers = wrap(cheers, [])
+    beer = wrap(cheers, [])
 
     def celebrate(sef, irc, msg, args):
         """time to celebrate"""
