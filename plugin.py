@@ -86,19 +86,19 @@ class BHJF(callbacks.Plugin):
 
     def cheers(self, irc, msg, args):
         """not quite a full celebration"""
-        irc.reply("       __________ "), prefixNick=False)
-        irc.reply("      |__  __  __|"), prefixNick=False)
-        irc.reply("  .---|  ::  ::  |"), prefixNick=False)
-        irc.reply(" |  __|__;:__;:__|"), prefixNick=False)
-        irc.reply(" | |  |  __  __  |"), prefixNick=False)
-        irc.reply(" | |  |::  ::  ::|"), prefixNick=False)
-        irc.reply(" | |  |::__;:__;:|"), prefixNick=False)
-        irc.reply(" | |  |__  __  __|"), prefixNick=False)
-        irc.reply("  . `.|  ::  ::  |"), prefixNick=False)
-        irc.reply("   `..|  ::  ::  |"), prefixNick=False)
-        irc.reply("       \ ::  :: /"), prefixNick=False)
-        irc.reply("        \;:  ;:/"), prefixNick=False)
-        irc.reply('         """"""'), prefixNick=False)
+        irc.reply("       __________ ", prefixNick=False)
+        irc.reply("      |__  __  __|", prefixNick=False)
+        irc.reply("  .---|  ::  ::  |", prefixNick=False)
+        irc.reply(" |  __|__;:__;:__|", prefixNick=False)
+        irc.reply(" | |  |  __  __  |", prefixNick=False)
+        irc.reply(" | |  |::  ::  ::|", prefixNick=False)
+        irc.reply(" | |  |::__;:__;:|", prefixNick=False)
+        irc.reply(" | |  |__  __  __|", prefixNick=False)
+        irc.reply("  . `.|  ::  ::  |", prefixNick=False)
+        irc.reply("   `..|  ::  ::  |", prefixNick=False)
+        irc.reply("       \ ::  :: /", prefixNick=False)
+        irc.reply("        \;:  ;:/", prefixNick=False)
+        irc.reply('         """"""', prefixNick=False)
     cheers = wrap(cheers, [])
 
     def celebrate(sef, irc, msg, args):
