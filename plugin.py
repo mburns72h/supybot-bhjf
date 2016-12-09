@@ -48,6 +48,7 @@ class BHJF(callbacks.Plugin):
 
     def bhjf(self, irc, msg, args):
         """ print the bhjf"""
+        irc.reply("it's me!!!!")
         irc.reply(ircutils.mircColor('    ,~"""~.         ', fg='brown',
             bg='light blue'), prefixNick=False)
         irc.reply(ircutils.mircColor(" ,-/       \-.      ", fg='brown',
