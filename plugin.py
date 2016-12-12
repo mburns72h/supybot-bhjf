@@ -184,6 +184,12 @@ class BHJF(callbacks.Plugin):
     et = wrap(ET, [])
     errata = wrap(ET, [])
 
+    def silly_question(self, irc, msg, args):
+        """ i have a silly question """
+        irc.reply("there are no silly questions, only silly people...")
+    silly = wrap(silly_question, [])
+    silly_question = wrap(silly_question, [])
+
 
 Class = BHJF
 
