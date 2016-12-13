@@ -191,32 +191,40 @@ class BHJF(callbacks.Plugin):
 
     def tux(self, irc, msg, args):
         """it's TUX!!!"""
-        irc.reply("                 .88888888:. ")
-        irc.reply("               88888888.88888. ")
-        irc.reply("              .8888888888888888. ")
-        irc.reply("              888888888888888888 ")
-        irc.reply("              88' _`88'_  `88888 ")
-        irc.reply("              88 88 88 88  88888 ")
-        irc.reply("              88_88_::_88_:88888 ")
-        irc.reply("              88:::,::,:::::8888 ")
-        irc.reply("              88`:::::::::'`8888 ")
-        irc.reply("             .88  `::::'    8:88. ")
-        irc.reply("            8888            `8:888. ")
-        irc.reply("          .8888'             `888888. ")
-        irc.reply("         .8888:..  .::.  ...:'8888888:. ")
-        irc.reply("        .8888.'     :'    `'::`88:88888 ")
-        irc.reply("      .8888        '         `.888:8888. ")
-        irc.reply("     888:8         .           888:88888  ")
-        irc.reply("   .888:88        .:           888:88888:  ")
-        irc.reply("   8888888.       ::           88:888888  ")
-        irc.reply("   `.::.888.      ::          .88888888  ")
-        irc.reply("  .::::::.888.    ::         :::`8888'.:.  ")
-        irc.reply(" ::::::::::.888   '         .::::::::::::  ")
-        irc.reply(" ::::::::::::.8    '      .:8::::::::::::.  ")
-        irc.reply(" .::::::::::::::.        .:888:::::::::::::  ")
-        irc.reply(" :::::::::::::::88:.__..:88888:::::::::::' ")
-        irc.reply(" `'.:::::::::::88888888888.88:::::::::' ")
-        irc.reply("       `':::_:' -- '' -'-' `':_::::'`  ")
+        irc.reply("                 .88888888:. ", prefixNick=False)
+        irc.reply("               88888888.88888. ", prefixNick=False)
+        irc.reply("              .8888888888888888. ", prefixNick=False)
+        irc.reply("              888888888888888888 ", prefixNick=False)
+        irc.reply("              88' _`88'_  `88888 ", prefixNick=False)
+        irc.reply("              88 88 88 88  88888 ", prefixNick=False)
+        irc.reply("              88_88_::_88_:88888 ", prefixNick=False)
+        irc.reply("              88:::,::,:::::8888 ", prefixNick=False)
+        irc.reply("              88`:::::::::'`8888 ", prefixNick=False)
+        irc.reply("             .88  `::::'    8:88. ", prefixNick=False)
+        irc.reply("            8888            `8:888. ", prefixNick=False)
+        irc.reply("          .8888'             `888888. ", prefixNick=False)
+        irc.reply("         .8888:..  .::.  ...:'8888888:. ", prefixNick=False)
+        irc.reply("        .8888.'     :'    `'::`88:88888 ", prefixNick=False)
+        irc.reply("      .8888        '         `.888:8888. ", prefixNick=False)
+        irc.reply("     888:8         .           888:88888  ",
+        prefixNick=False)
+        irc.reply("   .888:88        .:           888:88888:  ",
+        prefixNick=False)
+        irc.reply("   8888888.       ::           88:888888  ",
+        prefixNick=False)
+        irc.reply("   `.::.888.      ::          .88888888  ", prefixNick=False)
+        irc.reply("  .::::::.888.    ::         :::`8888'.:.  ",
+        prefixNick=False)
+        irc.reply(" ::::::::::.888   '         .::::::::::::  ",
+        prefixNick=False)
+        irc.reply(" ::::::::::::.8    '      .:8::::::::::::.  ",
+        prefixNick=False)
+        irc.reply(" .::::::::::::::.        .:888:::::::::::::  ",
+        prefixNick=False)
+        irc.reply(" :::::::::::::::88:.__..:88888:::::::::::' ",
+        prefixNick=False)
+        irc.reply(" `'.:::::::::::88888888888.88:::::::::' ", prefixNick=False)
+        irc.reply("       `':::_:' -- '' -'-' `':_::::'`  ", prefixNick=False)
     tux = wrap(tux, [])
 
 Class = BHJF
