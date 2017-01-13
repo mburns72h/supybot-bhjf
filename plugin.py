@@ -172,6 +172,11 @@ class BHJF(callbacks.Plugin):
     haha = wrap(haha, [])
     lol = wrap(haha, [])
 
+    def insanity(self, irc, msg, args):
+        """ junk """
+        irc.reply("The definition of insanity is doing the same thing and expecting the same results.")
+    insanity = wrap(insanity, [])
+
     def tps(self, irc, msg, args):
         """ junk """
         irc.reply("TPS stands for Testing Personal Sanity")
