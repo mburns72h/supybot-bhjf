@@ -179,7 +179,7 @@ class BHJF(callbacks.Plugin):
 
     def ET(self, irc, msg, args):
         """ ET Phone Home """
-        irc.reply("ET phones home")
+        irc.reply("ET phones home, gets busy signal")
     et = wrap(ET, [])
     errata = wrap(ET, [])
 
