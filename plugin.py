@@ -227,6 +227,15 @@ class BHJF(callbacks.Plugin):
         irc.reply("       `':::_:' -- '' -'-' `':_::::'`  ", prefixNick=False)
     tux = wrap(tux, [])
 
+    def halibut(self, irc, msg, args, target=None):
+        '''throw halibut at someone
+        --- or have one thrown at you'''
+        if target is not None:
+            irc.reply(target + ":  ><}}}*>", prefixNick=False)
+        else:
+            irc.reply("><}}}*>")
+    halibut = wrap(halibut, [optional('nick')])
+
 Class = BHJF
 
 
