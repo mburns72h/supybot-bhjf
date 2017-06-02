@@ -189,6 +189,16 @@ class BHJF(callbacks.Plugin):
     silly = wrap(silly_question, [])
     silly_question = wrap(silly_question, [])
 
+    def sos(self, irc, msg, args):
+        """HELP!!!"""
+        irc.reply(".d8888b  .d88b. .d8888b  ", prefixNick=False)
+        irc.reply("88K     d88\"\"88b88K      ", prefixNick=False)
+        irc.reply("\"Y8888b.888  888\"Y8888b. ", prefixNick=False)
+        irc.reply("     X88Y88..88P     X88 ", prefixNick=False)
+        irc.reply(" 88888P' \"Y88P\"  88888P' ", prefixNick=False)
+    sos = wrap(sos, [])
+
+
     def tux(self, irc, msg, args):
         """it's TUX!!!"""
         irc.reply("                 .88888888:. ", prefixNick=False)
