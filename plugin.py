@@ -239,7 +239,8 @@ class BHJF(callbacks.Plugin):
 
     def mongo(self, irc, msg, args, target=None):
         '''mongodb is webscale '''
-        irc.reply("MongoDB is Web Scale! -- https://youtu.be/b2F-DItXtZs (warning, harsh language ahead)"
+        irc.reply("MongoDB is Web Scale! -- https://youtu.be/b2F-DItXtZs " \
+            "(warning, harsh language ahead)")
     mongo = wrap(mongo, [])
 
     def halibut(self, irc, msg, args, target=None):
