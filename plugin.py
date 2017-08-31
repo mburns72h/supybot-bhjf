@@ -237,6 +237,11 @@ class BHJF(callbacks.Plugin):
         irc.reply("       `':::_:' -- '' -'-' `':_::::'`  ", prefixNick=False)
     tux = wrap(tux, [])
 
+    def mongo(self, irc, msg, args, target=None):
+        '''mongodb is webscale '''
+        irc.reply("MongoDB is Web Scale! -- https://youtu.be/b2F-DItXtZs (warning, harsh language ahead)"
+    mongo = wrap(mongo, [])
+
     def halibut(self, irc, msg, args, target=None):
         '''throw halibut at someone
         --- or have one thrown at you'''
