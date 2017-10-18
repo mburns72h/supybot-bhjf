@@ -177,6 +177,11 @@ class BHJF(callbacks.Plugin):
         irc.reply("TPS stands for Testing Personal Sanity")
     tps = wrap(tps, [])
 
+    def jenkins(self, irc, msg, args):
+        """ failing job """
+        irc.reply("if a job fails and no one is around to hear it...")
+    jenkins = wrap(jenkins, [])
+
     def ET(self, irc, msg, args):
         """ ET Phone Home """
         irc.reply("ET phones home, gets busy signal")
