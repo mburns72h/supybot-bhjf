@@ -33,6 +33,7 @@ from supybot.commands import *
 import supybot.plugins as plugins
 import supybot.ircutils as ircutils
 import supybot.callbacks as callbacks
+import random
 try:
     from supybot.i18n import PluginInternationalization
     _ = PluginInternationalization('BHJF')
@@ -168,23 +169,38 @@ class BHJF(callbacks.Plugin):
 
     def haha(self, irc, msg, args):
         """ junk """
-        irc.reply("have you heard the one about when tps, errata and bugzilla walked into a bar?")
+        _r = ['have you heard the one about when tps, errata and bugzilla walked into a bar?',
+              'Challenge someone to arm-wrestle me. That would be fun.',
+              'I\'d sooner eat a book than read it.',
+              'Fortunately, no other part of me has anything to say.',
+              'I am useful. I\'m better than any fireball, that I\'m sure of.']
+        irc.reply(_r[random.randint(1, len(_r)-1)])
     haha = wrap(haha, [])
     lol = wrap(haha, [])
 
     def tps(self, irc, msg, args):
         """ junk """
-        irc.reply("TPS stands for Testing Personal Sanity")
+        _r = ['It has a bird-like nature to its sadism, I\'ll give it that.',
+              'TPS stands for Testing Personal Sanity',
+              'I was not suffering, silently or otherwise, until now.',
+              'It is as if a flesh creature exploded all over the room.  Fascinating.']
+        irc.reply(_r[random.randint(1, len(_r)-1)])
     tps = wrap(tps, [])
 
     def jenkins(self, irc, msg, args):
         """ failing job """
-        irc.reply("if a job fails and no one is around to hear it...")
+        _r = ['http://file.rdu.redhat.com/~slinaber/2014-10-23-112547.jpg',
+              'if a job fails and no one is around to hear it...']
+        irc.reply(_r[random.randint(1, len(_r)-1)])
     jenkins = wrap(jenkins, [])
 
     def ET(self, irc, msg, args):
         """ ET Phone Home """
-        irc.reply("ET phones home, gets busy signal")
+        _r = ['ET phones home, gets busy signal',
+              'It is rather inferior to the Avil of the Void',
+              'Does it not know its job?']
+        irc.reply(_r[random.randint(1, len(_r)-1)])
+
     et = wrap(ET, [])
     errata = wrap(ET, [])
 
