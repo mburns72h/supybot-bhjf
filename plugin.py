@@ -174,7 +174,7 @@ class BHJF(callbacks.Plugin):
               'I\'d sooner eat a book than read it.',
               'Fortunately, no other part of me has anything to say.',
               'I am useful. I\'m better than any fireball, that I\'m sure of.']
-        irc.reply(_r[random.randint(1, len(_r)-1)])
+        irc.reply(_r[random.randint(0, len(_r)-1)])
     haha = wrap(haha, [])
     lol = wrap(haha, [])
 
@@ -184,14 +184,14 @@ class BHJF(callbacks.Plugin):
               'TPS stands for Testing Personal Sanity',
               'I was not suffering, silently or otherwise, until now.',
               'It is as if a flesh creature exploded all over the room.  Fascinating.']
-        irc.reply(_r[random.randint(1, len(_r)-1)])
+        irc.reply(_r[random.randint(0, len(_r)-1)])
     tps = wrap(tps, [])
 
     def jenkins(self, irc, msg, args):
         """ failing job """
         _r = ['http://file.rdu.redhat.com/~slinaber/2014-10-23-112547.jpg',
               'if a job fails and no one is around to hear it...']
-        irc.reply(_r[random.randint(1, len(_r)-1)])
+        irc.reply(_r[random.randint(0, len(_r)-1)])
     jenkins = wrap(jenkins, [])
 
     def ET(self, irc, msg, args):
@@ -199,7 +199,7 @@ class BHJF(callbacks.Plugin):
         _r = ['ET phones home, gets busy signal',
               'It is rather inferior to the Avil of the Void',
               'Does it not know its job?']
-        irc.reply(_r[random.randint(1, len(_r)-1)])
+        irc.reply(_r[random.randint(0, len(_r)-1)])
 
     et = wrap(ET, [])
     errata = wrap(ET, [])
