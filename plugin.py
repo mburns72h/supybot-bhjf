@@ -197,7 +197,7 @@ class BHJF(callbacks.Plugin):
     def ET(self, irc, msg, args):
         """ ET Phone Home """
         _r = ['ET phones home, gets busy signal',
-              'It is rather inferior to the Avil of the Void',
+              'It is rather inferior to the Anvil of the Void',
               'Does it not know its job?']
         irc.reply(_r[random.randint(0, len(_r)-1)])
 
