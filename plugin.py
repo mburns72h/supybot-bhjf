@@ -275,8 +275,7 @@ class BHJF(callbacks.Plugin):
 
     def insane(self, irc, msg, args, target=None):
         '''in need of a laugh'''
-        irc.reply("If we couldn't laugh, we would all go insane --- Jimmy
-        Buffett", prefixNick=False)
+        irc.reply("If we couldn't laugh, we would all go insane --- Jimmy Buffett", prefixNick=False)
     insane = wrap(insane)
     laugh = wrap(insane)
 
