@@ -279,6 +279,25 @@ class BHJF(callbacks.Plugin):
     insane = wrap(insane)
     laugh = wrap(insane)
 
+    def badger(self, irc, msg, args):
+        """Honey Badger!!!"""
+        irc.reply("                ___,,___", prefixNick=False)
+        irc.reply("           _,-='=- =-  -`\"--.__,,.._", prefixNick=False)
+        irc.reply("        ,-;// /  - -       -   -= - \"=.", prefixNick=False)
+        irc.reply("      ,'///    -     -   -   =  - ==-=\\`.", prefixNick=False)
+        irc.reply("     |/// /  =    `. - =   == - =.=_,,._ `=/|", prefixNick=False)
+        irc.reply("    ///    -   -    \\  - - = ,ndDMHHMM/\\b  \\\\ ", prefixNick=False)
+        irc.reply("  ,' - / /        / /\\ =  - /MM(,,._`YQMML  `|", prefixNick=False)
+        irc.reply(" <_,=^Kkm / / / / ///H|wnWWdMKKK#\"\"-;. `\"0\\  |", prefixNick=False)
+        irc.reply("        `\"\"QkmmmmmnWMMM\\\"\"WHMKKMM\\   `--. \\> \ ", prefixNick=False)
+        irc.reply(" hjm          `\"\"'  `->>>    ``WHMb,.    `-_<@)", prefixNick=False)
+        irc.reply("                                `\"QMM`.", prefixNick=False)
+        irc.reply("                                   `>>>", prefixNick=False)
+        irc.reply("https://www.youtube.com/watch?v=pzagBTcYsYQ",
+        prefixNick=False)
+    badger = wrap(badger, [])
+    honeybadger = wrap(badger, [])
+
 Class = BHJF
 
 
