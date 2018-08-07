@@ -298,6 +298,51 @@ class BHJF(callbacks.Plugin):
     badger = wrap(badger, [])
     honeybadger = wrap(badger, [])
 
+    def shipit(self, irc, msg, args):
+        """Ship It!!!"""
+        irc.reply("                    |", prefixNick=False)
+        irc.reply("                    |", prefixNick=False)
+        irc.reply("           |        |", prefixNick=False)
+        irc.reply("         |-|-|      |", prefixNick=False)
+        irc.reply("           |        |", prefixNick=False)
+        irc.reply("           | {O}    |", prefixNick=False)
+        irc.reply("           '--|     |", prefixNick=False)
+        irc.reply("             .|]_   |", prefixNick=False)
+        irc.reply("       _.-=.' |     |", prefixNick=False)
+        irc.reply("      |    |  |]_   |", prefixNick=False)
+        irc.reply("      |_.-='  |   __|__", prefixNick=False)
+        irc.reply("       _.-='  |\\   /|\\", prefixNick=False)
+        irc.reply("      |    |  |-'-'-'-'-.", prefixNick=False)
+        irc.reply("      |_.-='  '========='", prefixNick=False)
+        irc.reply("           `   |     |", prefixNick=False)
+        irc.reply("            `. |    / \\", prefixNick=False)
+        irc.reply("              ||   /   \\____.--=''''==--.._", prefixNick=False)
+        irc.reply("              ||_.'--=='    |__  __  __  _.'", prefixNick=False)
+        irc.reply("              ||  |    |    |\\ ||  ||  || |                        ___", prefixNick=False)
+        irc.reply(" ____         ||__|____|____| \\||__||__||_/    __________________/|   |", prefixNick=False)
+        irc.reply("|    |______  |===.---. .---.========''''=-._ |     |     |     / |   |", prefixNick=False)
+        irc.reply("|    ||     |\\| |||   | |   |      '===' ||  \\|_____|_____|____/__|___|", prefixNick=False)
+        irc.reply("|-.._||_____|_\\___'---' '---'______....---===''======//=//////========|", prefixNick=False)
+        irc.reply("|--------------\\------------------/-----------------//-//////---------/", prefixNick=False)
+        irc.reply("|               \\                /                 // //////         /", prefixNick=False)
+        irc.reply("|                \\______________/                 // //////         /", prefixNick=False)
+        irc.reply("|                                        _____===//=//////=========/", prefixNick=False)
+        irc.reply("|==============================================================LGB/", prefixNick=False)
+        irc.reply("'----------------------------------------------------------------`", prefixNick=False)
+    shipit = wrap(shipit, [])
+
+    def shipitgood(self, irc, msg, args):
+        """Ship it Good"""
+        irc.reply('     .  o ..                  ', prefixNick=False)
+        irc.reply('     o . o o.o                ', prefixNick=False)
+        irc.reply('          ...oo               ', prefixNick=False)
+        irc.reply('            __[]__            ', prefixNick=False)
+        irc.reply('         __|_o_o_o\__         ', prefixNick=False)
+        irc.reply('         \""""""""""/         ', prefixNick=False)
+        irc.reply('          \. ..  . /          ', prefixNick=False)
+        irc.reply('     ^^^^^^^^^^^^^^^^^^^^', prefixNick=False)
+    shipitgood = wrap(shipitgood, [])
+
 Class = BHJF
 
 
