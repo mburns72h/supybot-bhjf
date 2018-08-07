@@ -343,6 +343,34 @@ class BHJF(callbacks.Plugin):
         irc.reply('     ^^^^^^^^^^^^^^^^^^^^', prefixNick=False)
     shipitgood = wrap(shipitgood, [])
 
+    def seal(self,irc,msg,args):
+        """SEALS"""
+        irc.reply('                                       ___ ', prefixNick=False)
+        irc.reply('                                     //   \\\\  ', prefixNick=False)
+        irc.reply('                                    ||=====||  ', prefixNick=False)
+        irc.reply('                                     \\\\___//  ', prefixNick=False)
+        irc.reply('                                      ./O  ', prefixNick=False)
+        irc.reply('                                  ___/ //|\\\\  ', prefixNick=False)
+        irc.reply('                                 / o    /}  ', prefixNick=False)
+        irc.reply('                                (       /  ', prefixNick=False)
+        irc.reply('                                \\      /  ', prefixNick=False)
+        irc.reply('                                |     (  ', prefixNick=False)
+        irc.reply('                                |      \\  ', prefixNick=False)
+        irc.reply('                                )       \\  ', prefixNick=False)
+        irc.reply('                               /         \\  ', prefixNick=False)
+        irc.reply('                             /            )  ', prefixNick=False)
+        irc.reply('                           /              |  ', prefixNick=False)
+        irc.reply('                         //             / /  ', prefixNick=False)
+        irc.reply('                       /       ___(    ,| \\  ', prefixNick=False)
+        irc.reply('                     /       /    \\     |  \\  ', prefixNick=False)
+        irc.reply('                    (      /  /   /\\     \\  \\  ', prefixNick=False)
+        irc.reply('                    \\\\   /___ _-_//\'|     |  |  ', prefixNick=False)
+        irc.reply('                     \\\\_______-/     \\     \\  \\  ', prefixNick=False)
+        irc.reply('                                      \\-_-_-_-_-  ', prefixNick=False)
+        irc.reply('  ', prefixNick=False)
+        irc.reply('                        "Seal of Approval"  ', prefixNick=False)
+    seal = wrap(seal, [])
+
 Class = BHJF
 
 
