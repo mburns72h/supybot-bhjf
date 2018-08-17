@@ -371,6 +371,17 @@ class BHJF(callbacks.Plugin):
         irc.reply('                        "Seal of Approval"  ', prefixNick=False)
     seal = wrap(seal, [])
 
+    def mikedrop(self, irc, msg, args, target=None):
+        '''is anyone reading this'''
+        irc.reply("mburns says \"ow\"")
+    mikedrop = wrap(mikedrop)
+
+    def micdrop(self, irc, msg, args, target=None):
+        '''junk'''
+        irc.reply("Don't you mean mikedrop?")
+        self.mikedrop(irc, msg, args)
+    micdrop = wrap(micdrop)
+
 Class = BHJF
 
 
