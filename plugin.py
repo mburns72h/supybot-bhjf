@@ -382,6 +382,13 @@ class BHJF(callbacks.Plugin):
         self.mikedrop(irc, msg, args)
     micdrop = wrap(micdrop)
 
+    def nack(self, irc, msg, args, target=None):
+        '''we're not gonna take it'''
+        irc.reply("We're not gonna take it!  -- " + \
+                  "https://www.youtube.com/watch?v=4xmckWVPRaI" )
+    nack = wrap(nack)
+    NACK = wrap(nack)
+
 Class = BHJF
 
 
