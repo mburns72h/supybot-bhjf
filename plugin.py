@@ -392,7 +392,6 @@ class BHJF(callbacks.Plugin):
     def containers(self, irc, msg, args, target=None):
         '''Containers!!!!'''
         irc.reply("Containers!!!! -- https://imgflip.com/i/2gsqej")
-        self.containers(irc, msg, args)
     containers = wrap(containers)
 
 Class = BHJF
