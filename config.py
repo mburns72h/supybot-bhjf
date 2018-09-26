@@ -53,5 +53,9 @@ BHJF = conf.registerPlugin('BHJF')
 # conf.registerGlobalValue(BHJF, 'someConfigVariableName',
 #     registry.Boolean(False, _("""Help for someConfigVariableName.""")))
 
+conf.registerGlobalValue(BHJF, "rabies",
+                         registry.String('2018-09-04', """The date of last
+                         rabies incident"""))
+
 
 # vim:set shiftwidth=4 tabstop=4 expandtab textwidth=79:

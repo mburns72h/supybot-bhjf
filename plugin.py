@@ -35,6 +35,7 @@ import supybot.ircutils as ircutils
 import supybot.callbacks as callbacks
 import random
 from datetime import date
+from dateutil.parser import parse
 try:
     from supybot.i18n import PluginInternationalization
     _ = PluginInternationalization('BHJF')
@@ -401,9 +402,13 @@ class BHJF(callbacks.Plugin):
     containers = wrap(containers)
 
     def rabies(self, irc, msg, args, target=None):
-        last = date(2018, 9, 4)
-        delta = date.today() - last
-        irc.replay("It has been {0} Day(s) since the last rabies incident".format(delta.days))
+        """rabies counter"""
+        try:
+            last = parse(self.registryValue('rabies'))
+        except:
+            last = date(2018, 9, 4)
+        delta = date.today() - last.date()
+        irc.reply("It has been {0} Day(s) since the last rabies incident".format(delta.days))
     rabies = wrap(rabies)
 
 Class = BHJF
