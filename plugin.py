@@ -411,6 +411,11 @@ class BHJF(callbacks.Plugin):
         irc.reply("It has been {0} Day(s) since the last rabies incident".format(delta.days))
     rabies = wrap(rabies)
 
+    def chicken(self, irc, msg, args, target=None):
+        '''Chicken'''
+        irc.reply('Pro Tip: Sacrificing a chicken will make TPS happy!')
+    chicken = wrap(chicken)
+
 Class = BHJF
 
 
