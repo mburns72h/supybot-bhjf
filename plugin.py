@@ -416,6 +416,11 @@ class BHJF(callbacks.Plugin):
         irc.reply('Pro Tip: Sacrificing a chicken will make TPS happy!')
     chicken = wrap(chicken)
 
+    def rdusnow(self, irc, msg, args, target=None):
+        '''Snow in RDU!!!'''
+        irc.reply('What happens when it snows in RDU:  https://www.wral.com/-oh-my-gosh-raleigh-woman-s-snow-photo-goes-viral/13390109/')
+    rdusnow = wrap(rdusnow)
+
 Class = BHJF
 
 
