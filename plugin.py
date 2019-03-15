@@ -421,6 +421,33 @@ class BHJF(callbacks.Plugin):
         irc.reply('What happens when it snows in RDU:  https://www.wral.com/-oh-my-gosh-raleigh-woman-s-snow-photo-goes-viral/13390109/')
     rdusnow = wrap(rdusnow)
 
+    def leprechaun(self, irc, msg, args, target=None):
+        '''Happy St. Patrick's Day'''
+        irc.reply("""Happy St. Patrick's Day! """,  prefixNick=False)
+        irc.reply(ircutils.mircColor("""                                       .-----.   ()() """,  fg='green'), prefixNick=False)
+        irc.reply(ircutils.mircColor("""                                      /       \ .'()  """,  fg='green'), prefixNick=False)
+        irc.reply(ircutils.mircColor("""                                      |__...__|/      """,  fg='green'), prefixNick=False)
+        irc.reply(ircutils.mircColor("""                                      |_....._|       """,  fg='green'), prefixNick=False)
+        irc.reply(ircutils.mircColor("""                                    .-'  ___  '-.     """,  fg='green'), prefixNick=False)
+        irc.reply(ircutils.mircColor("""                                    \_.-`. .`-._/     """,  fg='green'), prefixNick=False)
+        irc.reply(ircutils.mircColor("""              __ .--. _              (|\ (_) /|)      """,  fg='green'), prefixNick=False)
+        irc.reply(ircutils.mircColor("""           .-;.-"-.-;`_;-,            ( \_=_/ )       """,  fg='green'), prefixNick=False)
+        irc.reply(ircutils.mircColor("""         .(_( `)-;___),-;_),          _(_   _)_       """,  fg='green'), prefixNick=False)
+        irc.reply(ircutils.mircColor("""        (.( `\.-._)-.(   ). )       /` ||'-'|| `\     """,  fg='green'), prefixNick=False)
+        irc.reply(ircutils.mircColor("""      ,(_`'--;.__\  _).;--'`_)  _  /_/ (_>o<_) \_\    """,  fg='green'), prefixNick=False)
+        irc.reply(ircutils.mircColor("""     // )`--..__ ``` _( o )'(';,)\_//| || : || |\\    """,  fg='green'), prefixNick=False)
+        irc.reply(ircutils.mircColor("""     \;'        `````  `\\   '.\\--' |`"""""""`|//    """,  fg='green'), prefixNick=False)
+        irc.reply(ircutils.mircColor("""     /                   ':.___//     \___,___/\_(    """,  fg='green'), prefixNick=False)
+        irc.reply(ircutils.mircColor("""    |                      '---'|      |__|__|        """,  fg='green'), prefixNick=False)
+        irc.reply(ircutils.mircColor("""    ;                           ;      ;""|"";        """,  fg='green'), prefixNick=False)
+        irc.reply(ircutils.mircColor("""     \                         /       [] | []        """,  fg='green'), prefixNick=False)
+        irc.reply(ircutils.mircColor("""      '.                     .'      .'  / \  '.      """,  fg='green'), prefixNick=False)
+        irc.reply(ircutils.mircColor("""     jgs'-,.__         __.,-'        `--'   `--'      """,  fg='green'), prefixNick=False)
+        irc.reply(ircutils.mircColor("""         (___/`````````\___)                          """,  fg='green'), prefixNick=False)
+    stpatrick = wrap(leprechaun)
+    leprechaun = wrap(leprechaun)
+
+
 Class = BHJF
 
 
