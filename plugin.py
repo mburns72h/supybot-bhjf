@@ -460,7 +460,8 @@ class BHJF(callbacks.Plugin):
 
     def friday(self, irc, msg, args, target=None):
         '''friday'''
-        irc.reply("laasie:  Have you asked jjoyce about lifecycles today?")
+        irc.reply("laasie:  Have you asked jjoyce about lifecycles today?",
+        prefixNick=False)
     friday = wrap(friday)
 
 
