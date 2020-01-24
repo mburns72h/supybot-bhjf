@@ -448,6 +448,15 @@ class BHJF(callbacks.Plugin):
     stpatrick = wrap(leprechaun)
     leprechaun = wrap(leprechaun)
 
+    def slinaber(self, irc, msg, args, target=None):
+        irc.reply("Did you mean eggs?")
+    slinaber = wrap(slinaber)
+
+    def eggs(self, irc, msg, args, target=None):
+        irc.reply("Did you mean slinaber?")
+    eggs = wrap(eggs)
+
+
 
 Class = BHJF
 
