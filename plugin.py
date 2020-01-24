@@ -458,6 +458,11 @@ class BHJF(callbacks.Plugin):
         irc.reply("Did you mean slinaber?")
     eggs = wrap(eggs)
 
+    def friday(self, irc, msg, args, target=None):
+        '''friday'''
+        irc.reply("laasie:  Have you asked jjoyce about lifecycles today?")
+    friday = wrap(friday)
+
 
 
 Class = BHJF
