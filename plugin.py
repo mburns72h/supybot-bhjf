@@ -464,6 +464,12 @@ class BHJF(callbacks.Plugin):
         prefixNick=False)
     friday = wrap(friday)
 
+    def modules(self, irc, msg, args, target=None):
+        ''' modules '''
+        irc.reply("Modules: https://imgflip.com/i/3plc4y")
+    module = wrap(modules)
+    modules = wrap(modules)
+
 
 
 Class = BHJF
