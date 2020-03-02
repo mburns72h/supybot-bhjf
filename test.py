@@ -34,5 +34,7 @@ from supybot.test import *
 class BHJFTestCase(PluginTestCase):
     plugins = ('BHJF',)
 
+    def test_url(self):
+        self.assertIn("https://", self.getMsg("bhjf"))
 
 # vim:set shiftwidth=4 tabstop=4 expandtab textwidth=79:

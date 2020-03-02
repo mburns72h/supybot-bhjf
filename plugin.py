@@ -44,6 +44,8 @@ except ImportError:
     # without the i18n module
     _ = lambda x: x
 
+# This is a url where the most recent plugin package can be downloaded.
+url = 'https://github.com/mburns72h/supybot-bhjf'
 
 class BHJF(callbacks.Plugin):
     """brown hat jellyfish"""
@@ -51,7 +53,7 @@ class BHJF(callbacks.Plugin):
 
     def bhjf(self, irc, msg, args):
         """ print the bhjf"""
-        irc.reply("it's me!!!!")
+        irc.reply(url + ": it's me!!!!")
         irc.reply(ircutils.mircColor('    ,~"""~.         ', fg='brown',
             bg='light blue'), prefixNick=False)
         irc.reply(ircutils.mircColor(" ,-/       \-.      ", fg='brown',

@@ -46,9 +46,6 @@ __author__ = supybot.Author('Mike Burns', 'mburns', 'mburns@redhat.com')
 # contributions.
 __contributors__ = {}
 
-# This is a url where the most recent plugin package can be downloaded.
-__url__ = 'https://github.com/mburns72h/supybot-bhjf'
-
 from . import config
 from . import plugin
 from imp import reload
@@ -57,6 +54,9 @@ reload(config)
 reload(plugin)
 # Add more reloads here if you add third-party modules and want them to be
 # reloaded when this plugin is reloaded.  Don't forget to import them as well!
+
+
+__url__ = plugin.url
 
 if world.testing:
     from . import test
