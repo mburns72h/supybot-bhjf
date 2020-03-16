@@ -422,6 +422,11 @@ class BHJF(callbacks.Plugin):
         irc.reply('What happens when it snows in RDU:  https://www.wral.com/-oh-my-gosh-raleigh-woman-s-snow-photo-goes-viral/13390109/')
     rdusnow = wrap(rdusnow)
 
+    def standards(self, irc, msg, args, target=None):
+        '''Standards!!!'''
+        irc.reply('https://xkcd.com/927/')
+    standards = wrap(standards)
+
     def leprechaun(self, irc, msg, args, target=None):
         '''Happy St. Patrick's Day'''
         irc.reply("""Happy St. Patrick's Day! """,  prefixNick=False)
