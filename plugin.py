@@ -475,6 +475,11 @@ class BHJF(callbacks.Plugin):
     module = wrap(modules)
     modules = wrap(modules)
 
+    def planning(self, irc, msg, args, target=None):
+        '''Planning'''
+        irc.reply('"Planning is dead."  -- Jim Whitehurst, former Red Hat CEO',  prefixNick=False)
+    planning = wrap(planning)
+
 
 
 Class = BHJF
