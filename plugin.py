@@ -482,6 +482,10 @@ class BHJF(callbacks.Plugin):
         irc.reply('"Planning is dead."  -- Jim Whitehurst, former Red Hat CEO',  prefixNick=False)
     planning = wrap(planning)
 
+    def fixit(self, irc, msg, args, target=None):
+        ''' Fix it, gosh darn it! '''
+        irc.reply("What do you think I'm doing? I am fixing it!!! -- https://youtu.be/AbSehcT19u0")
+    fixit = wrap(fixit, [])
 
 
 Class = BHJF
