@@ -487,6 +487,10 @@ class BHJF(callbacks.Plugin):
         irc.reply("What do you think I'm doing? I am fixing it!!! -- https://youtu.be/AbSehcT19u0")
     fixit = wrap(fixit, [])
 
+    def headdesk(self, irc, msg, args, target=None):
+        ''' head->desk '''
+        irc.reply("head->desk: https://giphy.com/gifs/head-bang-desk-xxCNsOokj8Rxp8EtUL")
+    headdesk = wrap(headdesk)
 
 Class = BHJF
 
